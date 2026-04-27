@@ -1,0 +1,27 @@
+{
+  "name": "md-word",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist:lite": "electron-builder --win nsis --config electron-builder.lite.json",
+    "dist:full": "electron-builder --win nsis --config electron-builder.full.json",
+    "dist:all": "npm run dist:lite && npm run dist:full",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^41.3.0",
+    "electron-builder": "^26.8.1"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.17",
+    "katex": "^0.16.45",
+    "markdown-it": "^14.1.1",
+    "markdown-it-texmath": "^1.0.0"
+  }
+}

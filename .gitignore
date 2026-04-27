@@ -1,0 +1,14 @@
+# 依赖
+node_modules/
+
+# 打包产物
+release/
+dist/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

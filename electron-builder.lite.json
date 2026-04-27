@@ -1,0 +1,33 @@
+{
+  "appId": "com.mdword.app",
+  "productName": "MD Word",
+  "directories": {
+    "output": "release/lite"
+  },
+  "files": [
+    "main.js",
+    "preload.js",
+    "index.html",
+    "renderer.js",
+    "package.json",
+    "node_modules/**/*"
+  ],
+  "asar": true,
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      }
+    ],
+    "artifactName": "md-word-lite-${version}-setup.${ext}"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "shortcutName": "MD Word Lite"
+  }
+}

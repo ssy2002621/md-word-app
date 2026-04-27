@@ -1,0 +1,39 @@
+{
+  "appId": "com.mdword.app.full",
+  "productName": "MD Word",
+  "directories": {
+    "output": "release/full"
+  },
+  "files": [
+    "main.js",
+    "preload.js",
+    "index.html",
+    "renderer.js",
+    "package.json",
+    "node_modules/**/*"
+  ],
+  "extraResources": [
+    {
+      "from": "vendor/pandoc",
+      "to": "vendor/pandoc"
+    }
+  ],
+  "asar": true,
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      }
+    ],
+    "artifactName": "md-word-full-${version}-setup.${ext}"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "shortcutName": "MD Word Full"
+  }
+}
